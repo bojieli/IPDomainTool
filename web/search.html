@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>soip.net - Know Everything About IP and Domain Names</title>
+
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrap">
+            <header class="navbar navbar-inverse navbar-fixed-top body-nav-txt" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="./">soip.net</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="active"><a href="#">Search</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="./about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div><!-- .container -->
+            </header>
+            <div class="body-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="logo">
+                                <a title="Go to SOIP Home" href="/"><img src="./static/image/logo.png" style="" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="input-group" style="margin:20px 0 20px 0">
+                                <input title="Enter your search term" type="text" id="mainquery" class="form-control" placeholder="IP or Domain" />
+                                <span class="input-group-btn">
+                                    <button title="Search" id="searchbtn" class="btn btn-default" type="button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div><!-- .input-group -->
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .body-title -->
+            <div id="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-md-offset-2">
+                            <ul id="resultList" class="nav nav-tabs">
+                                <li id="ipListLink"><a href="#ipList" data-toggle="tab">List IP</a></li>
+                                <li id="domainListLink"><a href="#domainList" data-toggle="tab">List Domain</a></li>
+                                <li id="registrantListLink"><a href="#registrantList" data-toggle="tab">List Registrant</a></li>
+                                <li id="emailListLink"><a href="#emailList" data-toggle="tab">List Email</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="ipList" class="tab-pane fade"><div class="panel-body"></div></div>
+                                <div id="domainList" class="tab-pane fade"><div class="panel-body"></div></div>
+                                <div id="registrantList" class="tab-pane fade"><div class="panel-body"></div></div>
+                                <div id="emailList" class="tab-pane fade"><div class="panel-body"></div></div>
+                            </div>
+                            <div id="loader" style="text-align:center;display:none">
+                                <img src="./static/image/loader.gif" />
+                            </div>
+                            <div id="answerbox" class="fade in active"></div>
+                            <div id="blank" style="height:20px;"></div>
+                        </div>
+                        <div class="col-md-3" style="padding-top:50px">
+                            <div>
+                                <h4>Tools</h4>
+                                <form method="get" action="http://www.bing.com/search" target="_blank">
+                                    <input type="hidden" name="cp" value="1252" />
+                                    <input type="hidden" name="FORM" value="FREEWS" />
+                                    <table style="margin:10px 0 10px 0;">
+                                        <tr>
+                                            <td>
+                                                <a href="http://www.bing.com/">
+                                                    <img src="http://www.bing.com/siteowner/s/siteowner/Logo_51x19_Dark.png" border="0" ALT="bing" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <div style="padding:5px;border:1px solid #999;position:relative;vertical-align:middle;margin-left:2px;display:inline-block;">
+                                                    <input id="bingbox" type="search" name="q" style="border:0;padding:0 0 0 10px;border-right:1px solid #ccc;position:relative;width:100px;"/>
+                                                    <button title="Search" type="submit" style="border-color:#fff;border-width:0;border-style:solid;margin:0;padding:0 8px;background-color:#fff">
+                                                        <span class="glyphicon glyphicon-search"></span>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                                <div id="domainWhois"></div>
+                                <div id="safebrowsing"></div>
+                            </div>
+                            <div>
+                                <div id="PageRank"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .container -->
+            </div><!-- #main -->
+        </div><!-- #wrap -->
+        <div id="footer">
+            <div class="container">
+                <p class="muted credit">&copy; 2013 MSRA Pre-PhD Class CodeBreaking Team</p>
+            </div>
+        </div><!-- #footer -->
+        <script src="static/js/jquery-2.0.3.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/search.js"></script>
+    </body>
+</html>
