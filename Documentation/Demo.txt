@@ -1,0 +1,34 @@
+Demo for our ASE project is available. Please install the demo on your own machine and report any issue to me.
+
+1.	Install nodejs:
+a.	Download and install at http://nodejs.org/download/
+b.	Open command prompt (cmd) and type ¡°node¡±. This is a JavaScript shell. Type Ctrl+C twice to exit. If command ¡°node¡± not found, go to ¡°Environment Variables¡± (in System Properties => Advanced), add a space to ¡°Path¡± in ¡°system variables¡±, save, delete the space and save again. This will force the system reload the new Environment Variables.
+
+2.	Install and start mongodb:
+a.	Download at http://www.mongodb.org/downloads
+b.	Unzip to C:\Users\<your-alias>, rename the directory to ¡°mongodb¡±. Inside it should be a ¡°bin¡± directory and several files.
+c.	Open cmd, go to C:\Users\<your-alias> if you are not already there, ¡°mkdir mongodb\data¡±
+d.	In cmd, "mongodb\bin\mongod.exe --dbpath mongodb\data¡± to start mongodb database. If any network warning shows up, allow access.
+e.	Visit ¡°http://localhost:28017/¡± in browser and you will see a statistics page. If the page does not show up, please contact me.
+f.	If you want to shutdown mongodb, type Ctrl+C in cmd.
+g.	Mongodb will not automatically start at system boot. Every time you want to start mongodb, follow step (d).
+
+3.	Get the code running
+a.	Connect to TFS server of our team, get the latest version of our project
+b.	Open cmd, go to <path-to-code>\v-bojli
+c.	Type ¡°npm install¡± to install mongodb and express modules for nodejs.
+d.	Type ¡°node testdata.js¡± to clear database and import test data. (These records are artificial)
+e.	Type ¡°node server.js¡± to run our application. If any network warning show up, allow access.
+f.	Visit ¡°http://localhost:3000/¡± in browser and you will see our index page. You may try IP addresses and domain names in testdata.js, e.g. google.com, 202.141.160.99. Please let me know if no results show up.
+g.	If you want to close server, type Ctrl+C in cmd.
+h.	If you want to run server again, follow steps (b) and (e). Mongodb should be started before starting server.
+
+4.	Development
+a.	Please note that this is only a demo. The frontend design and backend data structure should be designed carefully and should not copy the demo directly.
+b.	Every time you modify nodejs server code, please close and restart the nodejs application.
+c.	Every time you modify frontend HTML/CSS/JS, please refresh the page in browser.
+
+Thanks.
+
+Best regards,
+Bojie Li
