@@ -1,0 +1,14 @@
+{
+  "name": "soip",
+  "description": "IP Domain Lookup Tool",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "mongodb": "1.x",
+    "geoip-lite": "1.x",
+    "node-whois": "0.2.x",
+    "pg": "2.x",
+    "rethinkdb": "x"
+  }
+}
